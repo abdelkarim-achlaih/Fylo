@@ -1,6 +1,5 @@
 /* Start Variables */
 :root {
-  
 }
 /* End Variables */
 /* Start Global Rules */
@@ -14,7 +13,9 @@ html {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  font-family: 'Raleway', sans-serif;
+}
+ul {
+  list-style-type: none;
 }
 .container {
   padding-left: 15px;
@@ -44,3 +45,49 @@ body {
 /* Start Global Components */
 
 /* End Global Components */
+/* Start Header */
+header {
+  background-color: hsl(217, 28%, 15%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+header .container .logo img {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+header .container nav {
+  flex-grow: 1;
+}
+header .container nav ul {
+  display: flex;
+  /* border: red 1px solid; */
+  justify-content: flex-end;
+}
+header .container nav ul li:not(:last-child) {
+  margin-right: 50px;
+}
+@media (max-width: 767px) {
+  header .container nav ul {
+    padding-right: 5px;
+  }
+  header .container nav ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+header .container nav ul li a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 14px;
+}
+header .container nav ul li a:hover {
+  font-weight: 800;
+  text-decoration: underline;
+}
+/* End Header */
