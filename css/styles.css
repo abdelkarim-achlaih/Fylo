@@ -85,9 +85,95 @@ header .container nav ul li a {
   text-transform: capitalize;
   text-decoration: none;
   font-size: 14px;
+  font-weight: 400;
 }
 header .container nav ul li a:hover {
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: underline;
 }
 /* End Header */
+/* Start Intro */
+.intro {
+  background-color: hsl(217, 28%, 15%);
+  color: white;
+  padding-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.intro::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 340px;
+  left: 0;
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.intro .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro .container img,
+.intro .container .intro-content {
+  width: 70%;
+  text-align: center;
+}
+.intro .container .intro-content {
+  padding-bottom: 100px;
+}
+.intro .container .intro-content h1 {
+  font-family: 'Raleway', sans-serif;
+}
+.intro .container .intro-content p {
+  font-size: 14px;
+  width: 65%;
+  margin: 20px auto;
+  line-height: 1.5;
+}
+.intro .container .intro-content a {
+  background-color: hsl(198, 60%, 50%);
+  padding: 10px 60px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  transition-duration: .3s;
+}
+.intro .container .intro-content a:hover {
+  background-color: hsl(176, 68%, 64%);
+}
+@media (max-width: 767px) {
+  .intro::after {
+    background-image: url(../images/bg-curvy-mobile.svg);
+    bottom: 150px;
+    height: 150px;
+    width: 100%;
+  }
+  .intro::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 150px;
+    left: 0;
+    background-color: hsl(218, 28%, 13%);
+  }
+  .intro .container .intro-content h1 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .intro .container .intro-content p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 2;
+  }
+}
+/* End Intro */
