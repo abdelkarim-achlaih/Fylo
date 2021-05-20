@@ -339,3 +339,76 @@ header .container nav ul li a:hover {
   font-weight: 600;
 }
 /* End Testimonials Section*/
+/* Start Mail Section*/
+.mail {
+  position: relative;
+}
+.mail .div1, .mail .div2 {
+  height: 190px;
+}
+.mail .div1 {
+  background-color: hsl(218, 28%, 13%);
+}
+.mail .div2 {
+  background-color: hsl(216, 53%, 9%);
+}
+.mail .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(217, 28%, 15%);
+  color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+}
+.mail .content p {
+  width: 60%;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+.mail .content form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+.mail .content form input {
+  padding: 10px 20px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+}
+.mail .content form input:first-child {
+  flex-basis: 75%;
+  caret-color: #ccc;
+}
+.mail .content form input:first-child::placeholder {
+  color: #ccc;
+}
+.mail .content form input:last-child {
+  color: white;
+  background-color: hsl(176, 68%, 64%);
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .mail .content {
+    width: 90%;
+    padding: 20px;
+  }
+  .mail .content p {
+    width: 100%;
+  }
+  .mail .content form {
+    flex-direction: column;
+  }
+}
+/* End Mail Section*/
