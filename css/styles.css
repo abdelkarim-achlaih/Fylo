@@ -396,8 +396,12 @@ header .container nav ul li a:hover {
 }
 .mail .content form input:last-child {
   color: white;
-  background-color: hsl(176, 68%, 64%);
+  background-color: hsl(198, 60%, 50%);
   cursor: pointer;
+  transition-duration: .3s;
+}
+.mail .content form input:last-child:hover {
+  background-color: hsl(176, 68%, 64%);
 }
 @media (max-width: 767px) {
   .mail .content {
@@ -412,3 +416,82 @@ header .container nav ul li a:hover {
   }
 }
 /* End Mail Section*/
+/* Start Footer*/
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: hsl(216, 53%, 9%);
+  color: white;
+}
+footer .sub-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .container .sub-container div ul {
+  padding: 0;
+}
+footer .container .sub-container a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+}
+footer .container .sub-container li:not(:last-child) {
+  margin-bottom: 20px;
+}
+footer .container .sub-container > div {
+  flex-basis: calc(100% / 5.5);
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  footer .container .sub-container > div {
+    flex-basis: 100%;
+  }
+}
+footer .container img {
+  margin-bottom: 30px;
+  height: 40px;
+}
+footer .container .sub-container .infos .location {
+  line-height: 1.5;
+  font-size: 14px;
+}
+footer .container .sub-container div p {
+  position: relative;
+  padding-left: 30px;
+}
+footer .container .sub-container div p::before {
+  color: white;
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+footer .container .sub-container .location::before {
+  content: '\f3c5';
+  font-weight: 800;
+  top: 10px;
+}
+footer .container .sub-container .contact-phone::before {
+  content: '\f095';
+  font-weight: 800;
+}
+footer .container .sub-container .contact-mail::before {
+  content: '\f0e0';
+}
+footer .container .sub-container .social {
+  text-align: center;
+}
+footer .container .sub-container .social i {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5px;
+  margin-right: 15px;
+}
+@media (max-width: 767px) {
+
+}
+/* End Footer*/
