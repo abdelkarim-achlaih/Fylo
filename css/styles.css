@@ -432,6 +432,10 @@ footer .container .sub-container a {
   text-transform: capitalize;
   text-decoration: none;
   display: block;
+  transition-duration: .3s;
+}
+footer .container .sub-container a:hover {
+  font-weight: bold;
 }
 footer .container .sub-container li:not(:last-child) {
   margin-bottom: 20px;
@@ -486,8 +490,10 @@ footer .container .sub-container .social i {
   border: 1px solid white;
   padding: 5px;
   margin-right: 15px;
+  transition-duration: .3s;
 }
-@media (max-width: 767px) {
-
+footer .container .sub-container .social i:hover {
+  color: hsl(176, 68%, 64%);
+  border-color: hsl(176, 68%, 64%);
 }
 /* End Footer*/
