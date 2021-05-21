@@ -1,6 +1,6 @@
 # Fylo
 
-A challenge by frontendmentor
+A challenge by Frontend Mentor
 
 Visit 👇👇
 
